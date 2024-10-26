@@ -8,6 +8,7 @@
 A programação front-end foca na criação de interfaces de usuário para websites e aplicativos, concentrando-se na experiência e apresentação visual. Com a crescente demanda por interações digitais atraentes e funcionais, a área exige que os desenvolvedores acompanhem tendências, práticas e ferramentas modernas.
 
 ## História da Internet
+https://olhardigital.com.br/2021/10/28/internet-e-redes-sociais/saiba-quem-sao-os-criadores-da-arpanet-a-mae-da-internet/
 - **Origens**: A internet começou como ARPANET, um projeto militar dos EUA na Guerra Fria, visando uma comunicação resiliente a ataques.
 - **Evolução**: Desenvolvida para fins acadêmicos e militares, a internet se expandiu, conectando bilhões de pessoas e transformando a comunicação global.
 
