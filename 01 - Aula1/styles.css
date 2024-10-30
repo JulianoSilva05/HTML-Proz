@@ -18,8 +18,8 @@ header {
     margin-bottom: 5%;
     text-align: center;
     float:left;
- 
-  background:url(img/navFundo.png) repeat-x top center;
+    padding: 10px;
+    background:url(img/navFundo.png) repeat-x top center;
     
 }
 
@@ -37,7 +37,9 @@ header nav ul li a {
     text-decoration: none;
 }
 a:hover{
-    color: #c21b47;
+    color: #e066f3;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 section {
