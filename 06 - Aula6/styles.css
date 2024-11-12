@@ -1,0 +1,70 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: SuperMario;
+    src: url(fonts/SuperMario256.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: SuperMario;
+    font-size: 2.5em;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Área principal */
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
