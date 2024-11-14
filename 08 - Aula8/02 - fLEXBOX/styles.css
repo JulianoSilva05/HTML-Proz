@@ -46,7 +46,12 @@ h3{
     background-color: lightblue;
     padding: 16px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Animação no hover */
 }
+.card:hover {
+    transform: scale(1.05);
+  }
 .image-card{
     background-color: lightblue;
     border: 1px solid #e2e2e2;
@@ -60,8 +65,13 @@ h3{
     height: 150px; /* Altura fixa */
     object-fit: cover; /* Ajusta a imagem para preencher o espaço definido */
     border-radius: 5px; /* Arredonda os cantos, opcional */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação no hover */
 
 }
+.image-card img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
 
 .galeria{
     display: flex;

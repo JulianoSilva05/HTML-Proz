@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazônia</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      var nome = prompt("Nome: ");
+      var idade = 21;
+      document.write("Meu nome é ", nome, " e tenho ", idade, " anos");
+    </script>
   </head>
   <body>
     <header>
@@ -12,6 +17,7 @@
       <h2>Nossa biodiversidade</h2>
     </header>
     <main>
+      <button onclick="clicar()">Clique aqui</button>
       <section>
         <h3>saiba mais</h3>
         <div class="details">
@@ -35,38 +41,69 @@
       <section>
         <h3>Imagens</h3>
         <div class="galeria">
-            <div class="image-card">
-                <img src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPF2ShoP48ITy6OstVwOHxgOuQHKE1u5Z5Hg&s" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKTtvsTxRH79vQ5mYEf1kUpjaX_khsFL3YkA&s" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://img.freepik.com/fotos-gratis/vista-frontal-da-perereca-de-javan-em-uma-fruta-laranja_488145-230.jpg?ga=GA1.1.1466167210.1731321683&semt=ais_hybrid" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://i.ytimg.com/vi/X0Y8xYYPo38/hqdefault.jpg" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ" alt="">
-            </div>
-            <div class="image-card">
-                <img src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ" alt="">
-            </div>
+          <div class="image-card">
+            <img
+              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPF2ShoP48ITy6OstVwOHxgOuQHKE1u5Z5Hg&s"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKTtvsTxRH79vQ5mYEf1kUpjaX_khsFL3YkA&s"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://img.freepik.com/fotos-gratis/vista-frontal-da-perereca-de-javan-em-uma-fruta-laranja_488145-230.jpg?ga=GA1.1.1466167210.1731321683&semt=ais_hybrid"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://i.ytimg.com/vi/X0Y8xYYPo38/hqdefault.jpg"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
+              alt=""
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
+              alt=""
+            />
+          </div>
         </div>
       </section>
     </main>
+    <script src="document.js"></script>
   </body>
 </html>
