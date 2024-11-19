@@ -1,83 +1,171 @@
-body{
-    margin: 0;
-    font-family:Arial, Helvetica, sans-serif ;
-}
-@font-face {
-    font-family: florestaDois;
-    src:url(font/Letters\ for\ Learners\ Dots.ttf);
-}
-main section h3{
-    font-family: florestaDois;
-}
-
-header{
-    background-color: lightblue;
-    padding: 20px;
-    text-align: center;
-}
-
-h2{
-    font-size: 1rem;
-    font-family: normal;
-}
-main{
-    padding: 30px;
-    text-align: center;
-    max-width: 1200px;/*Se a tela for wide o conteudo irá ficar largo*/
-    margin:auto;/*a margin ira fica auto, colocando o conteudo no centro*/
-}
-h3{
-    text-transform: uppercase;
-}
-
-.details{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  section {
     margin-bottom: 40px;
-}
-@media(max-width: 600px){
-    .details{
-        flex-direction: column;
-}
-}
-
-.card{
-    background-color: lightblue;
-    padding: 16px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Animação no hover */
-}
-.card:hover {
-    transform: scale(1.05);
   }
-.image-card{
-    background-color: lightblue;
-    border: 1px solid #e2e2e2;
-    padding: 10px;
-    flex-basis: 200px;/*define o tamanho da imagem*/
-    border-radius: 5px;
-}
-
-.image-card img{
-    width: 200px; /* Largura fixa */
-    height: 150px; /* Altura fixa */
-    object-fit: cover; /* Ajusta a imagem para preencher o espaço definido */
-    border-radius: 5px; /* Arredonda os cantos, opcional */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Animação no hover */
-
-}
-.image-card img:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-  }
-
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  
+  h2 {
     margin-top: 40px;
-    gap:10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+ .container-flex{
+    display:flex;
+    background-color: #cfcfcf;
+    gap: 10px;
+    flex-direction: row;
+ }
+
+ .item-flex{
+    background-color: #2196f3;
+    color:#fff;
+    padding: 15px;
+    
+ }
+/* 2. flex-direction */
+ .direcao-linha{
+    flex-direction: row;
+ }
+ .direcao-coluna{
+    flex-direction: column;
+ }
+/* 3. flex-wrap = Quebra de linha */
+ .wrap{
+    flex-wrap: wrap;
+ }
+ .nowrap{
+    flex-wrap: nowrap;
+ }
+/* 4. justify-content - Alinhamento na Horizontal - justify */
+.justificar-inicio{
+    justify-content: flex-start;
+}
+.justificar-fim{
+    justify-content: end;
+}
+.justificar-centro{
+    justify-content: center;
+}
+.justificar-space-between{
+    justify-content: space-between;
     
 }
+/* mudando a largura do item-flex do justificar-space-between*/
+.justificar-space-between .item-flex{
+    width: 33%;
+}
+.justificar-space-around{
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+}
+.justificar-space-evenly{
+    justify-content: space-evenly;
+}
+/* 5. align-items - Alinhamento Vertical*/
+.align-items .container-flex{
+    height: 300px;
+}
+.alinhar-stretch{
+    align-items: stretch;
+}
+.alinhar-inicio{
+    align-items: start;
+}
+.alinhar-fim{
+    align-items: end;
+}
+.alinhar-centro{
+    align-items: center;   
+}
+
+.alinhar-baseline{
+    align-items: baseline;
+}
+.alto{
+    height: 100px;
+}
+.baixo{
+    height: 30px;
+}
+
+/* 6. align-content */
+.container-flex.wrap.alinhar-conteudo-inicio{
+    height: 200px;
+}
+.item-flex.caixa{
+    align-content: space-around;
+}
+
+/* 7. order */
+.item-flex.ordem3{
+    order: 3;
+}
+.item-flex.ordem2{
+    order: 2;
+}
+.item-flex.ordem1{
+    order: 1;
+}
+/* 8. flex-grow, flex-shrink, flex-basis, flex */
+.item-flex.crescer1{
+    flex-grow:4;
+}
+.item-flex.crescer2{
+    flex-grow:2;
+}
+.item-flex.crescer3{
+    flex-grow:2;
+}
+/* 9. align-self - ALIGN - Alinhamento vertical individual de cada item*/
+.container-flex.exemplo-align-self{
+    height: 200px;
+    align-items: start;
+    
+}
+.self-centro{
+    align-self: center;
+}
+.self-fim{
+    align-self:end;
+}
+/* 10. Exemplo Prático: Menu de Navegação */
+.menu-nav {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .menu-nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .menu-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* 11. Exemplo Prático: Layout Responsivo */
+  .responsivo {
+    border: 5px solid #d56b6b;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+  
+  .responsivo .caixa {
+    margin: 0;
+    padding: 20px 0;
+    width: 100px;
+    flex-grow: 1;
+    
+  }
+  .responsivo .caixa:nth-child(2) {
+    flex-grow: 2;
+    
+  }

@@ -1,109 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amazônia</title>
+    <title>Exemplos de Flexbox</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript">
-      var nome = prompt("Nome: ");
-      var idade = 21;
-      document.write("Meu nome é ", nome, " e tenho ", idade, " anos");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
-      <h1>Amazônia</h1>
-      <h2>Nossa biodiversidade</h2>
-    </header>
-    <main>
-      <button onclick="clicar()">Clique aqui</button>
-      <section>
-        <h3>saiba mais</h3>
-        <div class="details">
-          <div class="card">
-            A Amazônia é um dos ecossistemas mais ricos em biodiversidade do
-            planeta e abriga uma impressionante variedade de animais.
-          </div>
-          <div class="card">
-            Entre as espécies mais conhecidas estão o jaguar (ou onça-pintada),
-            o maior felino das Américas, e o boto-cor-de-rosa, um golfinho de
-            água doce encontrado nos rios da região.
-          </div>
-          <div class="card">
-            A floresta também é lar para inúmeros primatas, como o macaco-aranha
-            e o macaco-prego, além de aves coloridas, como araras e tucanos, que
-            se destacam pela plumagem vibrante.
-          </div>
-        </div>
-      </section>
+    <!-- 1. Container Flex e Itens Flex -->
+    <section>
+      <h2>1. Container Flex e Itens Flex</h2>
+      <div class="container-flex exemplo1">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+    </section>
 
-      <section>
-        <h3>Imagens</h3>
-        <div class="galeria">
-          <div class="image-card">
-            <img
-              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPF2ShoP48ITy6OstVwOHxgOuQHKE1u5Z5Hg&s"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKTtvsTxRH79vQ5mYEf1kUpjaX_khsFL3YkA&s"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://img.freepik.com/fotos-gratis/vista-frontal-da-perereca-de-javan-em-uma-fruta-laranja_488145-230.jpg?ga=GA1.1.1466167210.1731321683&semt=ais_hybrid"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://i.ytimg.com/vi/X0Y8xYYPo38/hqdefault.jpg"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
-              alt=""
-            />
-          </div>
-          <div class="image-card">
-            <img
-              src="https://lh5.googleusercontent.com/proxy/RYbnHvGeq_HI77WOeg95XUBbjf5OcvrEpUF80UJqgwiajD0i0nJCaRkKiRwlSuXFK04bguA_Rb3TCBGH2laXJwpXsCi8MyVsfbiVjOtAV3erSDZjkQ"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="document.js"></script>
+    <!-- 2. flex-direction -->
+    <section>
+      <h2>2. flex-direction</h2>
+      <h3>Linha (padrão)</h3>
+      <div class="container-flex direcao-linha">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>Coluna</h3>
+      <div class="container-flex direcao-coluna">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 3. flex-wrap - Quebra de linha quando nescessario -->
+    <section>
+      <h2>3. flex-wrap</h2>
+      <h3>Wrap</h3>
+      <div class="container-flex wrap">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+        <div class="item-flex">Item 4</div>
+        <div class="item-flex">Item 5</div>
+        <div class="item-flex">Item 6</div>
+      </div>
+      <h3>Nowrap (padrão)</h3>
+      <div class="container-flex nowrap">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+        <div class="item-flex">Item 4</div>
+        <div class="item-flex">Item 5</div>
+        <div class="item-flex">Item 6</div>
+      </div>
+    </section>
+
+    <!-- 4. justify-content -->
+    <section>
+      <h2>4. justify-content</h2>
+      <h3>flex-start (padrão)</h3>
+      <div class="container-flex justificar-inicio">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="container-flex justificar-fim">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>center</h3>
+      <div class="container-flex justificar-centro">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>space-between</h3>
+      <div class="container-flex justificar-space-between">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>space-around</h3>
+      <div class="container-flex justificar-space-around">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+      <h3>space-evenly</h3>
+      <div class="container-flex justificar-space-evenly">
+        <div class="item-flex">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 5. align-items -->
+    <section class="align-items">
+      <h2>5. align-items</h2>
+      <h3>stretch (padrão)</h3>
+      <div class="container-flex alinhar-stretch">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>flex-start</h3>
+      <div class="container-flex alinhar-inicio">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>flex-end</h3>
+      <div class="container-flex alinhar-fim">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>center</h3>
+      <div class="container-flex alinhar-centro">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex">Item 2</div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+      <h3>baseline</h3>
+      <div class="container-flex alinhar-baseline">
+        <div class="item-flex alto">Item 1</div>
+        <div class="item-flex"><p>Item 2</p></div>
+        <div class="item-flex baixo">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 6. align-content -->
+    <section>
+      <h2>6. align-content</h2>
+      <h3>flex-start</h3>
+      <div class="container-flex wrap alinhar-conteudo-inicio">
+        <div class="item-flex caixa">1</div>
+        <div class="item-flex caixa">2</div>
+        <div class="item-flex caixa">3</div>
+        <div class="item-flex caixa">4</div>
+        <div class="item-flex caixa">5</div>
+        <div class="item-flex caixa">6</div>
+        <div class="item-flex caixa">7</div>
+        <div class="item-flex caixa">8</div>
+      </div>
+    </section>
+
+    <!-- 7. order -->
+    <section>
+      <h2>7. order</h2>
+      <div class="container-flex exemplo-order">
+        <div class="item-flex ordem3">Item 1 (order: 3)</div>
+        <div class="item-flex ordem2">Item 2 (order: 2)</div>
+        <div class="item-flex ordem1">Item 3 (order: 1)</div>
+      </div>
+    </section>
+
+    <!-- 8. flex-grow -->
+    <section>
+      <h2>8. flex-grow, flex-shrink, flex-basis, flex</h2>
+      <h3>flex-grow</h3>
+      <div class="container-flex exemplo-grow">
+        <div class="item-flex crescer1">Item 1</div>
+        <div class="item-flex crescer2">Item 2</div>
+        <div class="item-flex crescer3">Item 3</div>
+      </div>
+    </section>
+
+    <!-- 9. align-self -->
+    <section>
+      <h2>9. align-self</h2>
+      <div class="container-flex exemplo-align-self">
+        <div class="item-flex self-inicio">Item 1 (flex-start)</div>
+        <div class="item-flex self-centro">Item 2 (center)</div>
+        <div class="item-flex self-fim">Item 3 (flex-end)</div>
+      </div>
+    </section>
+
+    <!-- 10. Exemplo Prático: Menu de Navegação -->
+    <section>
+      <h2>10. Exemplo Prático: Menu de Navegação</h2>
+      <nav class="menu-nav">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </nav>
+    </section>
+
+    <!-- 11. Exemplo Prático: Layout Responsivo -->
+    <section>
+      <h2>11. Exemplo Prático: Layout Responsivo</h2>
+      <div class="container-flex responsivo">
+        <div class="item-flex caixa">Item 1</div>
+        <div class="item-flex caixa">Item 2</div>
+        <div class="item-flex caixa">Item 3</div>
+        <div class="item-flex caixa">Item 4</div>
+
+      </div>
+    </section>
   </body>
 </html>
