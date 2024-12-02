@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background-color: #e0f9e0;
+}
+nav{
+    background-image: url(amazonia3.jpg);
+    width: 100%;
+    display: flex;
+    gap:10px;
+    justify-content: end;
+    padding: 2px;
+    background-color: rgba(103, 128, 98, 0.9);
+    color: aliceblue;
+    font-size: 20px;
+}
+a{
+    padding: 15px;
+    margin: 0;
+    text-decoration: none;
+    font-style: normal;
+    padding-right: 60px;
+    color: aliceblue;
+}
+a:hover{
+    color: #b3b9b3;
+    transform: scale(1.2);
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.container{
+    display: flex;
+    padding: 20px;
+}
+.texto{
+    width: 50%;
+}
+aside{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: flex-end;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main h1,p{
+    padding: 10px 20px;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+.image-container {
+    width: 350px; /* Largura fixa para o container */
+    overflow: hidden; /* Evita que o zoom ultrapasse o container */
+    border-radius: 8px; /* Borda arredondada, opcional */
+    margin: 5px auto;
+  }
+
+  .image-container img {
+    width: 100%; /* Garante que a imagem se ajuste ao container */
+    height: 250px;
+    transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+  }
+  .image-container:hover img {
+    transform: scale(1.2); /* Amplia a imagem em 20% */
+  }
+  input{
+    width: 250px;
+    align-items: end;
+    justify-items: end;
+  }
+ label{
+    width: 300px;
+    margin: 10px;
+
+    background-color: aqua;
+ }

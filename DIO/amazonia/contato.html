@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo do Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <section class="imagem">
+            <img src="contato_img.jpg" alt="">
+        </section>
+        
+        <h1>
+            Contato
+        </h1>
+        <hr>
+        <div class="container">
+            
+            <div class="texto">
+            <p>
+                Entre em contato:
+            </p>
+        </div>
+            <aside>
+                <form name="cadastro" target="_blank" onsubmit="alert('Formulário enviado')" autocomplete="on" method="POST" action="#">
+                    <h1>Formulário de Contato</h1>
+                    <label>Nome:</label><input type="text" name="name"/><br>
+                    <label>Idade:</label><input type="text" name="idade"/><br>
+                    <label>Senha:</label><input type="password" name="senha"><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </aside>
+            
+        </div>
+        
+    </main>
+    
+</body>
+</html>
