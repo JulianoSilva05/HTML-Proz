@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding-bottom: 5vh; /* Evita sobreposição do conteúdo pelo footer fixo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+:root{
+    --tam-font-menu: 1em;
+    --tam-font-h1: 1.2em;
+    --tam-font-text: 1em;
+    --cor-fundo-area1: rgba(203, 220, 235,0.5);
+    --cor-fundo-menus: rgba(19, 62, 135, 0.6);
+    --bg-img-area1: url(background_area.jpg);
+    --font-family-p: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width:600px) {
+    main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    --tam-font-menu: 0.8em;
+    --tam-font-h1: 0.8em;
+    --tam-font-text: 0.6em;
+    --cor-fundo-area1: rgba(203, 220, 235,0.5);
+    --cor-fundo-menus: rgba(19, 62, 135, 0.6);
+    --bg-img-area1: url(background_area.jpg);
+    --font-family-p: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+nav{
+    height: 5vh;
+    background-color: var(--cor-fundo-menus) ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    margin: 0;
+}
+nav a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: var(--tam-font-menu);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover{
+    color:var(--cor-fundo-menus);
+}
+main{
+    display: flex;
+    padding: 5vh;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--font-family-p);
+    font-size: var(--tam-font-text);
+    text-align: center;
+}
+.inicio, .hobby, .formacao {
+    background-color: rgb(203, 220, 235);
+}
+.contato, .habilidades, .sobre{
+    background-color: rgba(157, 171, 184,0.5);
+}
+section{
+    display: flex;
+    
+    height: 60vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 25px;
+}
+figure img{
+    height: auto;
+    max-height: 500px;
+    max-width: 800px;
+    width: 40vw;
+    border-radius: 25px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.formacao, .habilidades, .sobre{
+    text-align: start;
+    align-items: flex-start;
+    padding-top: 10vh;
+}
+.formacao .h3{
+    margin-top: 5vh;
+}
+.habilidades .h3{
+    margin-top: 5vh;
+}
+
+.sobre section{
+    
+    
+    flex-direction: column;
+    
+}
+.sobre_p_inicio{
+    margin-top: 15vh;
+    
+}
+.sobre p{
+    margin-bottom: 5vh;
+    font-size: 1.2em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family-p);
+    font-size: 10px;
+  }
